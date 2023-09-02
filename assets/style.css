@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    display: flex;
+    background-color: #111;
+    height: 100svh;
+    width: 100svw;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.reg{
+    font-weight: 900;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 3ch;
+    color: white;
+    background-color: #222;
+    padding: 50px;
+    border-radius: 10px;
+    width: fit-content;
+    height: min-content;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.input{
+    
+    font-weight: 900;
+    margin-top: 3vh;
+    width: fit-content;
+    height: min-content;
+    padding: 50px;
+    border-radius: 6px;
+    background-color: #333;
+    font-size:2ch;
+}
