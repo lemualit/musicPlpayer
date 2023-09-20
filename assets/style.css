@@ -2,38 +2,38 @@
     margin: 0;
     padding: 0;
 }
-.main{
+.firstSlide{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(./picturies/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.head{
     display: flex;
-    background-color: #111;
-    height: 100svh;
-    width: 100svw;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    margin: 0 auto;
+    max-width: 1400px;
 }
-.reg{
-    font-weight: 900;
-    font-family:'Courier New', Courier, monospace;
-    font-size: 3ch;
+.Logo{
+    top: 40px;
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size:1vw;
+}
+.navigation{
+    left: auto;
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    list-style-type: none;
+}
+.navigationButton{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 1vw;
+    font-size: 20px;
     color: white;
-    background-color: #222;
-    padding: 50px;
-    border-radius: 10px;
-    width: fit-content;
-    height: min-content;
-}
-a{
-    color: white;
-    text-decoration: none;
-}
-.input{
-    
-    font-weight: 900;
-    margin-top: 3vh;
-    width: fit-content;
-    height: min-content;
-    padding: 50px;
-    border-radius: 6px;
-    background-color: #333;
-    font-size:2ch;
 }
