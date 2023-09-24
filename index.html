@@ -4,24 +4,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./assets/script.js"></script>
-    <title>Player</title>       
+    <script src="script.js" defer></script>
+    <title>Lemual Music</title>    
+    <script src="https://kit.fontawesome.com/d05616506b.js" crossorigin="anonymous"></script>   
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body class="page">
     <div class="Box first">Сейчас играет:</div>
-    <div class="Box name">Name</div>
+    <div class="playing Box name">Now playing- <span class="song-name"></span></div>
     <img src="./assets/picturies/ava.png" class="Box pic"></img>
-    <div class="buttons">
-        <audio src="./assets/music/Whats.mp3" id="music"></audio>
-        <input type="range" id="seek-bar" min="0" value="0">
-        <!-- <button class="button dislike" ></button>
-        <button class="button before"></button>
-        <button class="music-button">Button</button>
-        <button class="button after"></button>
-        <button class="button like"></button> -->
+    <div class="track">
+        <input type="range" value="0" id="progress">
+    </div>
+    <div class="Box parent">
+        <div class="circle">
+            <button class="like"><i class="btn fa-regular fa-thumbs-down"></i></button>
+            <button class="previous"><i class="btn fa-solid fa-backward-step"></i></button>
+            <button class="play-pause"><i class="fa-solid fa-circle-play fa-xl bigger" id="play-pause-icon"></i></button>
+            <button class="next"><i class="btn fa-solid fa-forward-step"></i></button>
+            <!-- <div><i class="fa-solid fa-heart ico" style="color: #ffffff;"></i></div> -->
+            <div><i class="btn fa-regular fa-heart ico"></i></div>
+        </div>
     </div>
 </body>
 </html>  
