@@ -15,9 +15,9 @@ const icolike = document.querySelector("#like")
 var songs = [
   { id: 1, ele: Sunflower, audioName: 'Sunflower', like: false, bg: "./pict/Sunflower.png" },
   { id: 2, ele: Whats, audioName: "What's up danger?",  like: false, bg: "./pict/Whats.png" },
-  { id: 3, ele: Stranger, audioName: 'Stranger things main theme',  like: false, bg:"green"},
-  { id: 4, ele: Castor, audioName: 'Daft Punk - Castor',  like: false, bg: "white"  },
-  { id: 5, ele: Sunny, audioName: 'Bonney.M Sunny',  like: false, bg: "black" },
+  { id: 3, ele: Stranger, audioName: 'Stranger things main theme',  like: false, bg:"./pict/Stranger.png"},
+  { id: 4, ele: Castor, audioName: 'Daft Punk - Castor',  like: false, bg: "./pict/Castor.png"  },
+  { id: 5, ele: Sunny, audioName: 'Bonney.M Sunny',  like: false, bg: "./pict/Sunny.png" },
 ];
 
 for(const song of songs) {
