@@ -7,6 +7,9 @@
     -ms-user-select: none; /* IE10+/Edge */
     user-select: none; /* Standard */
 }
+h1, p{
+    font-weight:     300;
+}
 button{
     background: none;
     border: none;
@@ -28,7 +31,7 @@ button{
 .page{
     display: flex;
     flex-direction: column;
-    background-color: rgb(87, 58, 182);
+    background-color: rgb(58, 58, 58);
     height: 100vh;
     width: 100%;
 }
@@ -54,6 +57,10 @@ button{
     width: 40vh;
     height: 40vh;
     box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.5);
+    background-image: url(./pict/Castor.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 .track{
     margin-top: 4vh;

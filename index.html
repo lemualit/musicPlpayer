@@ -14,25 +14,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="favicon.ico" type="assets/picturies/ava.png">
-    <script src="https://music.yandex.ru/api/audio/dist/index.js"></script>
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
 </head>
-<body class="page">
-    <div id="div_id"></div>
-    <div class="Box first">Сейчас играет:</div> 
-    <div class="playing Box name">Now playing- <span class="song-name"></span></div>
-    <img src="./assets/picturies/ava.png" class="Box pic"></img>
-    <div class="track">
-        <input type="range" value="0" id="progress">
-    </div>
-    <div class="Box parent">
-        <div class="circle">
-            <button class="like"><i class=" fa-regular fa-thumbs-down" style="font-size: 20px;"></i></button>
-            <button class="previous"><i class=" fa-solid fa-backward-step" style="font-size: 30px;"></i></button>
-            <button class="play-pause"><i class="fa-solid fa-circle-play fa-xl" id="play-pause-icon" style="font-size: 45px;"></i></button>
-            <button class="next"><i class=" fa-solid fa-forward-step" style="font-size: 30px;"></i></button>
-            <button class="btnLike"><i class="fa-regular fa-heart" style="font-size: 20px;" id="like"></i></button>
+<body>
+    <section class="page">
+        <div id="div_id"></div>
+        <h1 class="Box first">Сейчас играет:</h1> 
+        <p class="playing Box name">Now playing- <span class="song-name"></span></p>
+        <div class="Box pic" id="picture"></div>
+        <div class="track">
+            <input type="range" value="0" id="progress">
         </div>
-    </div>
+        <div class="Box parent">
+            <div class="circle">
+                <button class="like"><i class=" fa-regular fa-thumbs-down" style="font-size: 20px;"></i></button>
+                <button class="previous"><i class=" fa-solid fa-backward-step" style="font-size: 30px;"></i></button>
+                <button class="play-pause"><i class="fa-solid fa-circle-play fa-xl" id="play-pause-icon" style="font-size: 45px;"></i></button>
+                <button class="next"><i class=" fa-solid fa-forward-step" style="font-size: 30px;"></i></button>
+                <button class="btnLike"><i class="fa-regular fa-heart" style="font-size: 20px;" id="like"></i></button>
+            </div>
+        </div>
+    </section>
 </body>
 </html>  
