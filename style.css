@@ -15,7 +15,16 @@ button{
     font: inherit;
     color: inherit;
     line-height: normal;
-  }
+}
+    button:focus,
+    button:active {
+    outline: none;
+}
+    input:focus,
+    input:active {
+    outline: none;
+}
+
 .page{
     display: flex;
     flex-direction: column;
@@ -29,6 +38,7 @@ button{
     font-size: 16px;
     text-align: center;
 }
+
 .first{
     margin-top: 2vh;
 }
@@ -68,12 +78,7 @@ button{
     color: white;
     font-size: 20px;
 }
-.btn{
-    font-size: 35px;
-}
-.bigger{
-    font-size: 45px;
-}
+
 #progress{
     -webkit-appearance: none;
     width: 40vh;

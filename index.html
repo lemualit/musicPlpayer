@@ -8,14 +8,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js" defer></script>
+    <script src="./buttonScript.js"></script>
     <title>Lemual Music</title>    
     <script src="https://kit.fontawesome.com/d05616506b.js" crossorigin="anonymous"></script>   
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="assets/picturies/ava.png">
+    <script src="https://music.yandex.ru/api/audio/dist/index.js"></script>
 </head>
 <body class="page">
-    <div class="Box first">Сейчас играет:</div>
+    <div id="div_id"></div>
+    <div class="Box first">Сейчас играет:</div> 
     <div class="playing Box name">Now playing- <span class="song-name"></span></div>
     <img src="./assets/picturies/ava.png" class="Box pic"></img>
     <div class="track">
@@ -23,12 +27,11 @@
     </div>
     <div class="Box parent">
         <div class="circle">
-            <button class="like"><i class="btn fa-regular fa-thumbs-down"></i></button>
-            <button class="previous"><i class="btn fa-solid fa-backward-step"></i></button>
-            <button class="play-pause"><i class="fa-solid fa-circle-play fa-xl bigger" id="play-pause-icon"></i></button>
-            <button class="next"><i class="btn fa-solid fa-forward-step"></i></button>
-            <!-- <div><i class="fa-solid fa-heart ico" style="color: #ffffff;"></i></div> -->
-            <div><i class="btn fa-regular fa-heart ico"></i></div>
+            <button class="like"><i class=" fa-regular fa-thumbs-down" style="font-size: 20px;"></i></button>
+            <button class="previous"><i class=" fa-solid fa-backward-step" style="font-size: 30px;"></i></button>
+            <button class="play-pause"><i class="fa-solid fa-circle-play fa-xl" id="play-pause-icon" style="font-size: 45px;"></i></button>
+            <button class="next"><i class=" fa-solid fa-forward-step" style="font-size: 30px;"></i></button>
+            <button class="btnLike"><i class="fa-regular fa-heart" style="font-size: 20px;" id="like"></i></button>
         </div>
     </div>
 </body>

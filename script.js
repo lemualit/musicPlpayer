@@ -13,11 +13,11 @@ const playPauseIcon = document.querySelector('#play-pause-icon');
 
 
 const songs = [
-  { ele: Sunflower, audioName: 'Sunflower' },
-  { ele: Whats, audioName: "What's up danger?" },
-  { ele: Stranger, audioName: 'Stranger things main theme' },
-  { ele: Castor, audioName: 'Daft Punk - Castor' },
-  { ele: Sunny, audioName: 'Bonney.M Sunny' },
+  { ele: Sunflower, audioName: 'Sunflower', like: false },
+  { ele: Whats, audioName: "What's up danger?",  like: false  },
+  { ele: Stranger, audioName: 'Stranger things main theme',  like: false  },
+  { ele: Castor, audioName: 'Daft Punk - Castor',  like: false  },
+  { ele: Sunny, audioName: 'Bonney.M Sunny',  like: false },
 ];
 
 for(const song of songs) {
@@ -30,6 +30,7 @@ for(const song of songs) {
 let current = 0;
 let currentSong = songs[current].ele;
 songName.textContent = songs[current].audioName;
+
 
 // const audio = (songs[current].ele);
 // const audioProgress = document.getElementById('progress');
@@ -53,7 +54,7 @@ let progress = document.getElementById("progress");
 if(currentSong.play()){
   setInterval(()=>{
     progress.value = currentSong.currentTime;
-  },150)
+  },500)
 }
 
 progress.onchange = function(){
